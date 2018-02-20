@@ -18,8 +18,8 @@ function newPeerAsync(argObj) {
     return new Promise((resolve, reject) => {
         const localPeerId = argObj.localPeerId;
         const peer = localPeerId
-            ? new Peer(localPeerId, { key: APIKEY, debug: 3 })
-            : new Peer({ key: APIKEY, debug: 3 });
+            ? new Peer(localPeerId, { key: APIKEY })
+            : new Peer({ key: APIKEY });
         peer.on('open', () => {
             console.log('peer.id', peer.id);
             argObj.peer = peer;

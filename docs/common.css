@@ -1,0 +1,15 @@
+.waitingLocalStream #btnStop, .waitingRemoteStream #btnStop, .waitingUserAction #btnStop {
+    display: none;
+}
+
+#btnStop:visited, #btnStop:hover, #btnStop:active {
+    color: #000;
+}
+
+#forms {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}

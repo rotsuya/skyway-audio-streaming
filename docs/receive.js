@@ -18,7 +18,7 @@ function streamAsync(argObj) {
                 if (remotePeerId !== PARENT) {
                     return;
                 }
-                alert('Camera was closed.');
+                alert('Streaming was finished.');
                 location.href = './';
             });
             argObj.remoteStream = remoteStream;
